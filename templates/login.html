@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+
+  <head>
+    <title>Game Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .form-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding and border are included in the total width */
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50; /* Green */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="loginForm" action="/login" method="post">
+        <h2>Choose your name</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <button type="submit">Login</button>
+        <p id="loginStatus"></p>
+      </form>
+    </div>
+    <script src="static/js/login.js"></script>
+  </body>
+</html>

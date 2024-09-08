@@ -1,0 +1,133 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: #DDD;
+}
+
+/* Modal style */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+
+#readyButton {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main styles */
+#container {
+  display: flex;
+  height: 100vh; /* Use viewport height for full-screen */
+  background-color: #110;
+}
+
+
+#left-side {
+  width: 70%; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-right: 4px solid #ccc; /* Add a subtle divider */
+  background-color: #111;
+}
+
+#deck-discard {
+  background: #f00;
+  display: flex; /* Use flexbox for easy vertical stacking */
+  flex-direction: column; /* Stack children vertically */
+  height: 100%;
+}
+
+#deck, #discard, #graveyard {
+  padding: 10px;
+  border: 2px solid #ccc;
+  flex-grow: 1; /* This will make the child divs expand to fill available space */
+}
+
+#wall-hit-list, #hand {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#wall-hit-list {
+  display: flex;
+  width: 95%; /* Adjust as needed */
+  justify-content: space-around;
+}
+
+#hit-list {
+  width: 65%;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+#wall {
+  border: 2px solid #ccc;
+  padding: 10px;
+  width: 30%; /* Adjust as needed */
+}
+
+#card-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  width: 120px; /* Adjust card size */
+  height: 180px;
+  border: 2px solid #ccc;
+  margin: 0 10px;
+}
+
+.mini-card {
+  width: 50px; /* Adjust card size */
+  height: 80px;
+  border: 2px solid #ccc;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-list {
+  width: 30%; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.player-hand {
+  background-color: #DDD;
+  color: #111;
+  width: 90%;
+}
+
+.player-section {
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  height: 320px;
+  width:100%;
+}
+
+.player-info
+
+.player-label {
+  font-weight: bold;
+}

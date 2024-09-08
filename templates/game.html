@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+
+  <head>
+    <title>Family Business</title>
+  </head>
+  <body>
+    <div id="ready-modal" class="modal">
+      <div class="modal-content">
+        <p>Once all players have joined the lobby, click to begin</p>
+        <button id="readyButton">Ready!</button>
+      </div>
+    </div>
+    <div id="container">
+      <div id="left-side">
+        <div id="game-header">
+          <h1 id="game-header-text">Lobby {{ lobby }}</h1>
+          <p id="game-header-info">Game info</p>
+        </div>
+        <div id="wall-hit-list">
+          <div id="deck-discard">
+            <div id="deck">
+              Deck
+              <div class="mini-card">
+                <p id="deck-count">0</p>
+              </div>
+            </div>
+            <div id="discard">
+              Discard
+              <div class="mini-card">
+                <p id="discard-count">0</p>
+              </div>
+            </div>
+            <div id="graveyard">
+              Graveyard
+              <div class="mini-card">
+                <p id="graveyard-count">0</p>
+              </div>
+            </div>
+          </div>
+          <div id="wall">Wall</div>
+          <div id="hit-list">Hit List</div>
+        </div>
+        <div id="player-hand">
+          <div id="hand">
+            <h1>Hand</h1>
+          </div>
+          <div id="card-row">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </div>
+      </div>
+      <div id="player-list">
+        <div class="player-section">
+          <div class="player-label">
+            <h3 class="player-name">Player 1</h3>
+            <h3 class="player-name">Mob Family</h3>
+          </div>
+          <div class="player-info">
+            <div class="mini-card"><p>x9</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="logout">
+      <form id="logoutForm" action="/logout" method="post">
+        <button name="logout" value="logout">Logout</button>
+      </form>
+    </div>
+    <script src="/static/js/game.js"></script>
+    <link rel="stylesheet" href="/static/css/game.css" />
+  </body>
+</html>
